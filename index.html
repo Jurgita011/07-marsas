@@ -10,14 +10,31 @@
       header,
         main,
         footer { 
-            width: 800px; 
+          width: 800px; 
         margin-left:calc((100% - 800px) / 2) ;  
         }
 
     header {
+        display: flex;
+        gap: 40px;
+        align-items:center ;
+        justify-content: flex-start;
         background-color: pink; 
-       
-}
+    }
+
+    img {
+
+    }
+    nav {
+
+    }
+
+    a{
+       margin-right: 40px;
+    }
+     a:first-child {
+         margin-left: 0; ;
+     }  
     
     main {
     background-color: aqua; 
@@ -25,15 +42,25 @@
 }
 
       footer {
-    background-color: coral ;
+    background-color:coral ;
     
 }
 </style>
 </head>
 
 <body>
-    <header>HEADER</header>
+    <header>
+        <img src="./logo.png" alt="">
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+
+        </nav>
+    </header>
     <main >MAIN</main>
-    <floote>FLOOTE<floote>
+    <footer>FLOOTER</footer>
 </body>
 </html>
